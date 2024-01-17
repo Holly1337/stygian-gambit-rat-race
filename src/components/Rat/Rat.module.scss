@@ -1,0 +1,72 @@
+.track {
+  position: relative;
+  width: 1024px;
+  height: 64px;
+  background-color: darkgreen;
+  border-bottom: 8px solid #a43a31;
+  border-top: 8px solid #a43a31;
+}
+
+.rat {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  transition: left;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.labelWrapper {
+  position: absolute;
+  color: white;
+  height: 64px;
+  width: 100%;
+  padding-left: 16px;
+  font-size: 24px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.gold {
+  color: gold;
+}
+
+.silver {
+  color: #A9A9A9;
+}
+
+.bronze {
+  color: #CD7F32;//saddlebrown;
+}
+
+.last {
+  // color: red;//saddlebrown;
+}
+
+.flag {
+  position: absolute;
+  right: 0;
+  width: 24px;
+  height: 64px;
+  background-color: white;
+
+  background-image:
+          linear-gradient(45deg, black 25%, transparent 25%),
+          linear-gradient(135deg, black 25%, transparent 25%),
+          linear-gradient(45deg, transparent 75%, black 75%),
+          linear-gradient(135deg, transparent 75%, black 75%);
+  background-size:16px 16px; /* Must be a square */
+  background-position:0 0, 8px 0, 8px -8px, 0px 8px; /* Must be half of one side of the square */
+}
